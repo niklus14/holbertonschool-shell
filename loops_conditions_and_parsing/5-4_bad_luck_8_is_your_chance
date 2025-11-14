@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#Loop 1–10 with different text for 4, 8, others — using while + if/elif/else
 i=1
 while [ $i -le 10 ]
 do
