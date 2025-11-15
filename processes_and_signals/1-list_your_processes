@@ -2,4 +2,4 @@
 # This script displays a list of currently running processes with hierarchy.
 
 # Use ps to show all processes, in a user-friendly format, including those without a TTY.
-ps axjf
+ps auxf
