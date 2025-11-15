@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 # Iterate over the files in the current directory (excluding hidden ones)
 for file in *; do
     # Check if it's a regular file (optional check for files or directories)
