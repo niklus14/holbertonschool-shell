@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
-# This script finds the PID and name of name of bash processes via command pgrep
-pgrep -l bash 
+# This script finds all running "bash" processes.
+# shellcheck disable=SC2009
+ps auxf | grep bash
