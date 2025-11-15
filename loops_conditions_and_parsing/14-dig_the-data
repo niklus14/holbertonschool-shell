@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#The script processes an Apache log file to count and group the occurrences of each unique combination of IP address and HTTP status code, then sorts and displays the results in descending order of frequency.
+awk '{ count[$1 " " $9]++ } END { for (key in count) printf "%7s %s\n", count[key], key }' apache-access.log | sort -nr -k1
