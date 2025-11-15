@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Open the /etc/passwd file and process each line
+while IFS=: read -r username _ user_id _ _ home_dir _; do
+    # Output the desired fields (username, user_id, and home_dir)
+    echo "$username:$user_id:$home_dir"
+done < /etc/passwd
